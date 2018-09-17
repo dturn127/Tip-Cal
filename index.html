@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link href="css\tip.css" rel="stylesheet">
+
+
+    <title>Tip Calculator</title>
+</head>
+<body>
+
+<form class="content">
+  <!--User enters bill-->
+  <div>
+    <div>
+      <label>Please Enter the Amount of the Bill</label>
+    </div>
+    <div>
+      <label>$</label><input id="dueAmt" placeholder="0.00">
+    </div>
+
+  </div>
+
+  <!--Service-->
+  <div>
+    <div>
+      <label>How was your service?</label>
+    </div>
+    <div>
+      <select id="servQual">
+        <option disabled selected value="0">Choose an Option</option>
+        <option value=".05">Terrible (5%)</option>
+        <option value=".10">Bad (10%)</option>
+        <option value=".15">Ok (15%)</option>
+        <option value=".20">Good (20%)</option>
+        <option value=".30">Outstanding (30%)</option>
+      </select>
+    </div>
+  </div>
+
+
+  <!--Number of Diners-->
+  <div>
+    <div>
+      <label>Number of Diners?</label>
+    </div>
+    <div>
+      <input id="diners" placeholder="Number of Diners?">
+    </div>
+    <!--<div>
+          <button type="button" id="getTip">Calculate</button>
+    </div>-->
+  </div>
+
+  <div id="tipResult">
+
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <span id="tipTotal"></span>
+    </div>
+
+
+
+  </div>
+
+  <!-- Trigger/Open The Modal -->
+  <button type="button" id="myBtn">Get Tip</button>
+  <button type="button" id="clear">Clear</button>
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+  
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <span id="displayAmt"></span>
+    </div>
+  </div>
+
+  
+
+</form>
+
+
+
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js\script.js"></script>
+</body>
+</html>
