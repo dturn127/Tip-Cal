@@ -10,7 +10,7 @@ function calTip(){
 if (billTotal === "" || serviceLevel == 0 || numDiners ===""){
   document.getElementById('displayAmt').innerHTML = "Please complete form";
   return;
-}
+};
 
 
 
@@ -24,6 +24,8 @@ document.getElementById('displayAmt').innerHTML = tipTotal;
 
 
 };
+
+
 
 
 //Modal code via www.w3schools.com
